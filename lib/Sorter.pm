@@ -11,7 +11,7 @@ __PACKAGE__->mk_accessors(qw/values algorithm/);
 
 sub new {
     my $class  = shift;
-    bless {}, $class;
+    $class->SUPER::new(@_);
 }
 
 sub get_values {
